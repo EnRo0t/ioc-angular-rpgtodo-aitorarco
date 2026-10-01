@@ -2,58 +2,55 @@
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 22.2.0.
 
-## Development server
+# Nom de l'aplicació
 
-To start a local development server, run:
+RPGTodo
 
-```bash
+## Autor/a
+
+Aitor Arco Alcaine - https://enro0t.github.io/
+
+## Descripció
+
+Task manager amb elements RPG i temàtica Xianxia-Wuxia (generes de fantasia xina).
+
+## Versions utilitzades
+
+Nodejs - 24.21.0
+Npm - 11.19.0
+Git - 2.47.3
+Angular CLI - 22.2.2
+Host OS - Linux Debian 6.12.107-1 
+
+## Com crear i executar el projecte
+
+**Requisits i dependencias**
+
+- Angular CLI 22.x
+- NPM 11.12.1
+- GIT 2.x
+- NODE JS 24.15 o superior
+
+```sh
+# Clona el repositori
+git clone https://github.com/EnRo0t/ioc-angular-rpgtodo-aitorarco
+# Entra dins del projecte
+cd ioc-angular-rpgtodo-aitorarco
+# Construeix el projecte i engega el servidor de desenvolupament
 ng serve
+# Entra a l'aplicacio web
+firefox http://localhost:4200
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+## Estat de l'EAC1
 
-## Code scaffolding
+- [x] Exercici 1
+- [x] Exercici 2
+- [x] Exercici 3
+- [x] Exercici 4
+- [x] Exercici 5 
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+## Enllaç del repositori
 
-```bash
-ng generate component component-name
-```
++ https://github.com/EnRo0t/ioc-angular-rpgtodo-aitorarco
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.

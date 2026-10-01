@@ -1,0 +1,35 @@
+@font-face {
+  font-family: 'kaushan';
+  src: url(../assets/fonts/KaushanScript-Regular.ttf);
+  font-weight: normal;
+  font-style: normal;
+}
+.app-shell {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 48rem;
+  margin: 2rem auto;
+  font-family: 'kaushan';
+  background-image: url(../assets/images/xiaxia_background.webp);
+  background-size: cover;
+}
+
+h1 {
+  color: gold;
+  margin: 1rem;
+}
+
+.project-card {
+  padding: 1rem;
+  margin: 2rem;
+  border: 1px solid #b7c7d9;
+  border-radius: 0.5rem;
+  background-color: rgba(255,255,255,0.8);
+}
+
+.note {
+  padding: 1rem;
+  background: #eef5ff;
+  border-left: 4px solid #1976d2;
+}
