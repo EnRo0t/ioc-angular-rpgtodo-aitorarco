@@ -1,14 +1,13 @@
 <h3>Lista de tareas</h3>
 
-<ul>
-    @for (task of tasks; track task.id) {
-        <li>{{ task.name }}</li>
-    }@empty {
-        <li>No existe ninguna tarea</li>
-    }
+<ul class="task-list">
+  @for (task of tasks; track task.id) {
+    <li>
+      <app-task-item [task]="task" (toggled)="toggleTask($event)" />
+    </li>
+  }
 </ul>
 
 <app-targeta-element [completed]="completedCount" [total]="tasks.length" />
-
 
 

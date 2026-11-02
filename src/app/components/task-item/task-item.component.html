@@ -1,0 +1,8 @@
+<label class="task-item" [class.done]="task().complete">
+  <input
+    type="checkbox"
+    [checked]="task().complete"
+    (change)="toggled.emit(task().id)"
+  />
+  <span>{{ task().name }}</span>
+</label>
