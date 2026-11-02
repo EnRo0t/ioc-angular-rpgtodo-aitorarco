@@ -1,7 +1,9 @@
 <h3>Lista de tareas</h3>
 
+<app-barra-filtro [active]="filter" (filterChange)="setFilter($event)" />
+
 <ul class="task-list">
-  @for (task of tasks; track task.id) {
+  @for (task of filteredTasks; track task.id) {
     <li>
       <app-task-item [task]="task" (toggled)="toggleTask($event)" />
     </li>

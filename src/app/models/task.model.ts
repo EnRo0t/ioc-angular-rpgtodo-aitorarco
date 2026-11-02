@@ -7,3 +7,5 @@ export interface Task {
 	level: number; // Este sería el campo númerico relevante
 	complete: boolean; // Si la tarea esta completada o no  
 }
+
+export type TaskFilter = 'all' | 'pending' | 'completed';
