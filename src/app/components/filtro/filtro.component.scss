@@ -1,0 +1,27 @@
+.filtro-form {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+
+  .field {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .error {
+    color: #c62828;
+  }
+
+  .actions {
+    display: flex;
+    gap: 0.5rem;
+    align-self: flex-end;
+  }
+
+  button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+}

@@ -1,0 +1,38 @@
+<form #filterForm="ngForm" (ngSubmit)="apply()" class="filtro-form">
+  <div class="field">
+    <label for="text">Buscar</label>
+    <input
+      id="text"
+      name="text"
+      type="text"
+      [(ngModel)]="text"
+      #textInput="ngModel"
+      required
+      minlength="3"
+    />
+    @if (textInput.invalid && (textInput.dirty || textInput.touched)) {
+      <small class="error">
+        @if (textInput.errors?.['required']) {
+          El texto es obligatorio.
+        } @else if (textInput.errors?.['minlength']) {
+          Mínimo 3 caracteres (llevas {{ textInput.errors?.['minlength'].actualLength }}).
+        }
+      </small>
+    }
+  </div>
+
+  <div class="field">
+    <label for="category">Categoría</label>
+    <select id="category" name="category" [(ngModel)]="category">
+      <option value="">Todas</option>
+      @for (c of categories(); track c) {
+        <option [value]="c">{{ c }}</option>
+      }
+    </select>
+  </div>
+
+  <div class="actions">
+    <button type="submit" [disabled]="filterForm.invalid">Aplicar</button>
+    <button type="button" (click)="clear(filterForm)">Restablecer</button>
+  </div>
+</form>

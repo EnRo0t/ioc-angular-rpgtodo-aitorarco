@@ -1,4 +1,8 @@
-<h3>Lista de tareas</h3>
+<app-filtro
+  [categories]="categories"
+  (applied)="applyFilters($event)"
+  (cleared)="resetFilters()"
+/>
 
 <app-barra-filtro [active]="filter" (filterChange)="setFilter($event)" />
 
