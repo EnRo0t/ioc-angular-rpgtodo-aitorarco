@@ -5,6 +5,7 @@ import { TargetaElementComponent } from '../targeta-element/targeta-element.comp
 import { TaskItemComponent } from '../task-item/task-item.component';
 import { BarraFiltroComponent } from '../barra-filtro/barra-filtro.component';
 import { FiltroComponent } from '../filtro/filtro.component';
+import { DatePipe } from '@angular/common';
 
 @Component({
   imports: [
@@ -12,6 +13,7 @@ import { FiltroComponent } from '../filtro/filtro.component';
     TaskItemComponent,
     BarraFiltroComponent,
     FiltroComponent,
+    DatePipe,
   ],
   selector: 'app-task-lists',
   styleUrl: './task-lists.component.scss',
@@ -89,5 +91,13 @@ export class TaskListsComponent implements OnInit {
   /* Restablece el filtro de texto y categoría */
   resetFilters(): void {
     this.searchFilters = { text: '', category: '' };
+  }
+
+  /* Tarea seleccionada para mostrar en el panel de detalle */
+  selectedTask: Task | null = null;
+
+  /* Selecciona una tarea (o la deselecciona si ya estaba seleccionada) */
+  selectTask(task: Task): void {
+    this.selectedTask = this.selectedTask?.id === task.id ? null : task;
   }
 }

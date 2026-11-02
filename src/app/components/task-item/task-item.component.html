@@ -4,5 +4,5 @@
     [checked]="task().complete"
     (change)="toggled.emit(task().id)"
   />
-  <span>{{ task().name }}</span>
+  <span (click)="selected.emit()">{{ task().name }}</span>
 </label>

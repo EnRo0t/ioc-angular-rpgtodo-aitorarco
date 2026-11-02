@@ -8,7 +8,10 @@ import { SearchFilters } from '../../models/task.model';
   styleUrl: './filtro.component.scss',
   templateUrl: './filtro.component.html',
 })
+
+
 export class FiltroComponent {
+  
   categories = input.required<string[]>();
   applied = output<SearchFilters>();
   cleared = output<void>();

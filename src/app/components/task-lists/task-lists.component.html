@@ -6,13 +6,41 @@
 
 <app-barra-filtro [active]="filter" (filterChange)="setFilter($event)" />
 
-<ul class="task-list">
-  @for (task of filteredTasks; track task.id) {
-    <li>
-      <app-task-item [task]="task" (toggled)="toggleTask($event)" />
-    </li>
-  }
-</ul>
+<!-- Contador de resultados -->
+<p class="result-count">
+  Resultados: {{ filteredTasks.length }} de {{ tasks.length }}
+</p>
+
+<!-- Lista o mensaje de sin resultados -->
+@if (filteredTasks.length > 0) {
+  <ul class="task-list">
+    @for (task of filteredTasks; track task.id) {
+      <li>
+        <app-task-item
+          [task]="task"
+          (toggled)="toggleTask($event)"
+          (selected)="selectTask(task)"
+        />
+      </li>
+    }
+  </ul>
+} @else {
+  <p class="no-results">No se ha encontrado ninguna tarea con estos filtros.</p>
+}
+
+<!-- Panel de detalle -->
+@if (selectedTask) {
+  <section class="detail-panel">
+    <h3>{{ selectedTask.name }}</h3>
+    <p>{{ selectedTask.description }}</p>
+    <p>Categoría: {{ selectedTask.category }}</p>
+    <p>Nivel: {{ selectedTask.level }}</p>
+    <p>Fecha: {{ selectedTask.date | date: 'dd/MM/yyyy' }}</p>
+    <p>Estado: {{ selectedTask.complete ? 'Completada' : 'Pendiente' }}</p>
+  </section>
+} @else {
+  <p class="detail-hint">Haz clic en el nombre de una tarea para ver su detalle.</p>
+}
 
 <app-targeta-element [completed]="completedCount" [total]="tasks.length" />
 
