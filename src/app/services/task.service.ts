@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core'; /* Importa el decorador */
 import { Observable, of } from 'rxjs'; /* Permite trabajar con observables */
 
 import { Task } from '../models/task.model'; // Importo modelo
-import { TASKS_MOCK } from '../mocks/tasks.mock'; // Importo base de datos
+import { TASK_MOCK } from '../mocks/task.mock'; // Importo base de datos
 
 /* Esto permite inyectar el servicio */
 @Injectable({
@@ -12,7 +12,7 @@ import { TASKS_MOCK } from '../mocks/tasks.mock'; // Importo base de datos
 export class TaskService {
 
   /* Array que almacena las tareas de la db mock */
-  private tasks: Task[] = [...TASKS_MOCK];
+  private tasks: Task[] = [...TASK_MOCK];
   /* Método que devuelve las tareas */ 
   getTasks(): Observable<Task[]> {
     return of(this.tasks);

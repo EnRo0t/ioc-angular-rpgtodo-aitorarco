@@ -1,1 +1,11 @@
-<p>task-lists works!</p>
+<h3>Lista de tareas</h3>
+
+<ul>
+    @for (task of tasks; track task.id) {
+        <li>{{ task.name }}</li>
+    }@empty {
+        <li>No existe ninguna tarea</li>
+    }
+</ul>
+
+

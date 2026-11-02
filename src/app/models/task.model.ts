@@ -3,7 +3,7 @@ export interface Task {
 	name: string;
 	description: string;
 	category: string;
-	date: Date;
+	date: string;
 	level: number; // Este sería el campo númerico relevante
 	complete: boolean; // Si la tarea esta completada o no  
 }
