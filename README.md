@@ -47,6 +47,8 @@ firefox http://localhost:4200
 + main
 + ra1-setup
 + ra2-components
++ ra3-serveis
++ ra4-navegacio
 
 ## Estat de l'EAC1
 
