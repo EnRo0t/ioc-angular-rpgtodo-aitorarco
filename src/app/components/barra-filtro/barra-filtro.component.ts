@@ -7,7 +7,9 @@ import { TaskFilter } from '../../models/task.model';
   templateUrl: './barra-filtro.component.html',
 })
 export class BarraFiltroComponent {
+  /* Recibe el filtro activo */
   active = input.required<TaskFilter>();
+  /* Le indica al padre que filtro quiere el usuario */
   filterChange = output<TaskFilter>();
 
   filters: { value: TaskFilter; label: string }[] = [

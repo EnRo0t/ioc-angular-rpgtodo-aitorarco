@@ -35,6 +35,7 @@
     <p>{{ selectedTask.description }}</p>
     <p>Categoría: {{ selectedTask.category }}</p>
     <p>Nivel: {{ selectedTask.level }}</p>
+    <!-- Aquí se utiliza el pipe date para mostrar las fechas de las tareas a un formato "español" Los recibe de selectedTask.date que es el date de la db -->
     <p>Fecha: {{ selectedTask.date | date: 'dd/MM/yyyy' }}</p>
     <p>Estado: {{ selectedTask.complete ? 'Completada' : 'Pendiente' }}</p>
   </section>

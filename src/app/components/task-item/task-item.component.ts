@@ -7,7 +7,10 @@ import { Task } from '../../models/task.model';
   templateUrl: './task-item.component.html',
 })
 export class TaskItemComponent {
+   /* Recibe las tareas del componente padre */
    task = input.required<Task>();
-   toggled = output<number>(); // emite el id de la tarea
-   selected = output<void>(); // Avisa si se ha seleccionado una tarea
+   /* Emite el id de la tarea al componente padre */
+   toggled = output<number>();
+   /* Avisa al componente padre si se ha seleccionado una tarea */
+   selected = output<void>();
 }

@@ -1,15 +1,17 @@
 <form #filterForm="ngForm" (ngSubmit)="apply()" class="filtro-form">
   <div class="field">
     <label for="text">Buscar</label>
+    <!-- Validaciones required (obligar texto no vacio | minlegth 3 texto con al menos 3 carácteres)-->
     <input
       id="text"
       name="text"
       type="text"
       [(ngModel)]="text"
-      #textInput="ngModel"
+      #textInput="ngModel" 
       required
       minlength="3"
     />
+    <!-- Añade un mensaje de error si el campo de texto del filtro esta vacio o tiene < 3 carácteres. -->
     @if (textInput.invalid && (textInput.dirty || textInput.touched)) {
       <small class="error">
         @if (textInput.errors?.['required']) {
@@ -20,7 +22,7 @@
       </small>
     }
   </div>
-
+ <!-- Genera una opción por cada categoría que el componente padre le pasa -->
   <div class="field">
     <label for="category">Categoría</label>
     <select id="category" name="category" [(ngModel)]="category">
@@ -32,7 +34,9 @@
   </div>
 
   <div class="actions">
+    <!-- Botón con condición que lo deshabilita si el formulario es inválido -->
     <button type="submit" [disabled]="filterForm.invalid">Aplicar</button>
+    <!-- Botón para resetear los filtros. Limpia los campos categoria y texto --> 
     <button type="button" (click)="clear(filterForm)">Restablecer</button>
   </div>
 </form>
