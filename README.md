@@ -42,6 +42,12 @@ ng serve
 firefox http://localhost:4200
 ```
 
+## Ramas GIT
+
++ main
++ ra1-setup
++ ra2-components
+
 ## Estat de l'EAC1
 
 - [x] Exercici 1
@@ -49,6 +55,46 @@ firefox http://localhost:4200
 - [x] Exercici 3
 - [x] Exercici 4
 - [x] Exercici 5 
+
+## Estat de l'EAC2
+
+- [x] Exercici 1
+- [x] Exercici 2
+- [x] Exercici 3
+- [x] Exercici 4
+- [] Exercici 5 (parcialment completat)
+
+## Components
+
+**Tots els component han sigut creats a la branca ra2-components**
+
++ task-lists
++ targeta-element
++ task-item
++ barra-filtro
++ filtro
+
+**Tots els components han sigut creats amb la comanda**:
+
+```sh
+ng generate component components/nom-component --add-type-to-class-name
+```
+
+## Serveis
+
++ task
+
+```sh
+ng generate service task
+```
+
+## Models
+
++ task
+
+## Dbs
+
++ task
 
 ## Enllaç del repositori
 
