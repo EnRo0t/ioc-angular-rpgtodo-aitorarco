@@ -1,0 +1,74 @@
+{
+    "users": [
+        {
+            "id": "1",
+            "name": "enroot",
+            "level": 1,
+            "exp": 0,
+            "tasks": 0
+        },
+        {
+            "id": "2",
+            "name": "bulomer",
+            "level": 2,
+            "exp": 100,
+            "tasks": 20
+        },
+        {
+            "id": "3",
+            "name": "kerryco",
+            "level": 1,
+            "exp": 0,
+            "tasks": 0
+        },
+        {
+            "id": "4",
+            "name": "matusalen",
+            "level": 100,
+            "exp": 100000,
+            "tasks": 1000
+        },
+        {
+            "id": "5",
+            "name": "napoleon",
+            "level": 2,
+            "exp": 100,
+            "tasks": 20
+        },
+          {
+            "id": "6",
+            "name": "ozymandias",
+            "level": 50,
+            "exp": 50000,
+            "tasks": 500
+        },
+          {
+            "id": "7",
+            "name": "austinpowers",
+            "level": 3,
+            "exp": 300,
+            "tasks": 30
+        },
+          {
+            "id": "8",
+            "name": "m.rajoy",
+            "level": 12,
+            "exp": 200,
+            "tasks": 20
+        },
+        {
+            "id": "9",
+            "name": "snoopdogg",
+            "level": 10,
+            "exp": 1000,
+            "tasks": 100
+        },
+          {
+            "id": "10",
+            "name": "t.kaczynski",
+            "level": 0,
+            "exp": 0,
+            "tasks": 0
+        }
+    ]
+}
