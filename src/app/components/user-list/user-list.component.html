@@ -1,0 +1,7 @@
+<h2>Usuarios</h2>
+
+@for (u of users$ | async; track u.id) {
+  <p>{{ u.id }} | {{ u.name }} | {{ u.description }} | nivel {{ u.level }} | {{ u.date }}</p>
+} @empty {
+  <p>No hay usuarios.</p>
+}

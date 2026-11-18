@@ -3,72 +3,113 @@
         {
             "id": "1",
             "name": "enroot",
+            "description": "",
             "level": 1,
             "exp": 0,
-            "tasks": 0
+            "date": "2025-11-16",
+            "tasks": 0,
+            "ascend": false
         },
         {
             "id": "2",
-            "name": "bulomer",
+            "name": "bulomer", 
+            "description": "",
             "level": 2,
             "exp": 100,
-            "tasks": 20
+            "date": "2025-11-19",
+            "tasks": 20,
+            "ascend": false
         },
         {
             "id": "3",
             "name": "kerryco",
+            "description": "",
             "level": 1,
             "exp": 0,
-            "tasks": 0
+            "date": "2025-11-20",
+            "tasks": 0,
+            "ascend": false
         },
         {
             "id": "4",
-            "name": "matusalen",
+            "name": "matusalen", 
+            "description": "",
             "level": 100,
             "exp": 100000,
-            "tasks": 1000
+            "date": "2025-11-21",
+            "tasks": 1000,
+            "ascend": false
         },
         {
             "id": "5",
             "name": "napoleon",
+            "description": "",
             "level": 2,
             "exp": 100,
-            "tasks": 20
+            "date": "2025-11-25",
+            "tasks": 20,
+            "ascend": false
         },
           {
             "id": "6",
-            "name": "ozymandias",
+            "name": "ozymandias", 
+            "description": "",
             "level": 50,
             "exp": 50000,
-            "tasks": 500
+            "date": "2025-11-29",
+            "tasks": 500,
+            "ascend": false
         },
           {
             "id": "7",
             "name": "austinpowers",
+            "description": "",
             "level": 3,
             "exp": 300,
-            "tasks": 30
+            "date": "2025-11-30",
+            "tasks": 30,
+            "ascend": false
         },
           {
             "id": "8",
             "name": "m.rajoy",
+            "description": "",
             "level": 12,
             "exp": 200,
-            "tasks": 20
+            "date": "2025-12-01",
+            "tasks": 20,
+            "ascend": false
         },
         {
             "id": "9",
             "name": "snoopdogg",
+            "description": "",
             "level": 10,
             "exp": 1000,
-            "tasks": 100
+            "date": "2025-12-16",
+            "tasks": 100,
+            "ascend": false
         },
-          {
+        {
             "id": "10",
             "name": "t.kaczynski",
+            "description": "",
             "level": 0,
             "exp": 0,
-            "tasks": 0
+            "date": "2025-12-17",
+            "tasks": 0,
+            "ascend": false
+        },
+        {
+            "id": "11",
+            "name": "       P EPE   ",
+            "description": "",
+            "level": "14",
+            "exp": 0,
+            "date": "2025-12-17",
+            "tasks": 0,
+            "ascend": false
         }
+
     ]
 }
