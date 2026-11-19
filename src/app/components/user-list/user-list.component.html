@@ -1,6 +1,18 @@
 <h2>Usuarios</h2>
 
-@for (u of users$ | async; track u.id) {
+<!-- Bloque nuevo que muestra el estado de carga -->
+@if (loading()) {
+  <p>Cargando...</p>
+}
+
+<!-- Bloque nuevo que muestra el error y el botón de reintentar -->
+@if (error()) {
+  <p>{{ error() }}</p>
+  <button (click)="retry()">Reintentar</button>
+}
+
+<!-- 'users$ | async' pasa a 'users()', porque ahora leo el signal del servicio -->
+@for (u of users(); track u.id) {
   <p>{{ u.id }} | {{ u.name }} | {{ u.description }} | nivel {{ u.level }} | {{ u.date }}</p>
 } @empty {
   <p>No hay usuarios.</p>

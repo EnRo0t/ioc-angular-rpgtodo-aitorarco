@@ -1,115 +1,128 @@
 {
-    "users": [
-        {
-            "id": "1",
-            "name": "enroot",
-            "description": "",
-            "level": 1,
-            "exp": 0,
-            "date": "2025-11-16",
-            "tasks": 0,
-            "ascend": false
-        },
-        {
-            "id": "2",
-            "name": "bulomer", 
-            "description": "",
-            "level": 2,
-            "exp": 100,
-            "date": "2025-11-19",
-            "tasks": 20,
-            "ascend": false
-        },
-        {
-            "id": "3",
-            "name": "kerryco",
-            "description": "",
-            "level": 1,
-            "exp": 0,
-            "date": "2025-11-20",
-            "tasks": 0,
-            "ascend": false
-        },
-        {
-            "id": "4",
-            "name": "matusalen", 
-            "description": "",
-            "level": 100,
-            "exp": 100000,
-            "date": "2025-11-21",
-            "tasks": 1000,
-            "ascend": false
-        },
-        {
-            "id": "5",
-            "name": "napoleon",
-            "description": "",
-            "level": 2,
-            "exp": 100,
-            "date": "2025-11-25",
-            "tasks": 20,
-            "ascend": false
-        },
-          {
-            "id": "6",
-            "name": "ozymandias", 
-            "description": "",
-            "level": 50,
-            "exp": 50000,
-            "date": "2025-11-29",
-            "tasks": 500,
-            "ascend": false
-        },
-          {
-            "id": "7",
-            "name": "austinpowers",
-            "description": "",
-            "level": 3,
-            "exp": 300,
-            "date": "2025-11-30",
-            "tasks": 30,
-            "ascend": false
-        },
-          {
-            "id": "8",
-            "name": "m.rajoy",
-            "description": "",
-            "level": 12,
-            "exp": 200,
-            "date": "2025-12-01",
-            "tasks": 20,
-            "ascend": false
-        },
-        {
-            "id": "9",
-            "name": "snoopdogg",
-            "description": "",
-            "level": 10,
-            "exp": 1000,
-            "date": "2025-12-16",
-            "tasks": 100,
-            "ascend": false
-        },
-        {
-            "id": "10",
-            "name": "t.kaczynski",
-            "description": "",
-            "level": 0,
-            "exp": 0,
-            "date": "2025-12-17",
-            "tasks": 0,
-            "ascend": false
-        },
-        {
-            "id": "11",
-            "name": "       P EPE   ",
-            "description": "",
-            "level": "14",
-            "exp": 0,
-            "date": "2025-12-17",
-            "tasks": 0,
-            "ascend": false
-        }
-
-    ]
+  "users": [
+    {
+      "id": "1",
+      "name": "enroot",
+      "description": "",
+      "level": 1,
+      "exp": 0,
+      "date": "2025-11-16",
+      "tasks": 0,
+      "ascend": false
+    },
+    {
+      "id": "2",
+      "name": "bulomer",
+      "description": "",
+      "level": 2,
+      "exp": 100,
+      "date": "2025-11-19",
+      "tasks": 20,
+      "ascend": false
+    },
+    {
+      "id": "3",
+      "name": "kerryco",
+      "description": "",
+      "level": 1,
+      "exp": 0,
+      "date": "2025-11-20",
+      "tasks": 0,
+      "ascend": false
+    },
+    {
+      "id": "4",
+      "name": "matusalen",
+      "description": "",
+      "level": 100,
+      "exp": 100000,
+      "date": "2025-11-21",
+      "tasks": 1000,
+      "ascend": false
+    },
+    {
+      "id": "5",
+      "name": "napoleon",
+      "description": "",
+      "level": 2,
+      "exp": 100,
+      "date": "2025-11-25",
+      "tasks": 20,
+      "ascend": false
+    },
+    {
+      "id": "6",
+      "name": "ozymandias",
+      "description": "",
+      "level": 50,
+      "exp": 50000,
+      "date": "2025-11-29",
+      "tasks": 500,
+      "ascend": false
+    },
+    {
+      "id": "7",
+      "name": "austinpowers",
+      "description": "",
+      "level": 3,
+      "exp": 300,
+      "date": "2025-11-30",
+      "tasks": 30,
+      "ascend": false
+    },
+    {
+      "id": "8",
+      "name": "m.rajoy",
+      "description": "",
+      "level": 12,
+      "exp": 200,
+      "date": "2025-12-01",
+      "tasks": 20,
+      "ascend": false
+    },
+    {
+      "id": "9",
+      "name": "snoopdogg",
+      "description": "",
+      "level": 10,
+      "exp": 1000,
+      "date": "2025-12-16",
+      "tasks": 100,
+      "ascend": false
+    },
+    {
+      "id": "10",
+      "name": "t.kaczynski",
+      "description": "",
+      "level": 0,
+      "exp": 0,
+      "date": "2025-12-17",
+      "tasks": 0,
+      "ascend": false
+    },
+    {
+      "id": "11",
+      "name": "       P EPE   ",
+      "description": "",
+      "level": "14",
+      "exp": 0,
+      "date": "2025-12-17",
+      "tasks": 0,
+      "ascend": false
+    },
+    {
+      "id": "7KLdSleDUUc"
+    },
+    {
+      "id": "zG95xaM2LD0",
+      "name": "Aitor",
+      "description": "Un tio genial",
+      "level": 100,
+      "exp": 1000,
+      "date": "2026-11-16",
+      "tasks": 0,
+      "ascend": false
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
 }
